@@ -5,6 +5,7 @@ The app is a simple project, 12/4/2024
 By SHARON OBINDA
 
 # Description
+
 This is my end of phase 1 project at Moringa School.
 
 This is where I will build an app for delivering food.
@@ -44,7 +45,7 @@ First, make sure that you have 'json-server' installed globally or locally in yo
 
 In this project, you will install it globally by navigating to your project directory and run the following command on your vs code terminal;
 
-npm install -g json-server
+ npm install -g json-server
 
 Also, ensure that you have Node.js and npm installed and that they are up to date
 
@@ -54,16 +55,18 @@ Also, ensure that you have Node.js and npm installed and that they are up to dat
 ​
 json-server --watch db.json 
 
-Test your server by visiting this route in the browser:
+- Test your server by visiting this route in the browser:
 
  https://sona-food-delivery.onrender.com
+ 
  # Live link
-Deployed Frontend can be accessed here 
+
+Deployed Frontend can be accessed here https://sharonobinda.github.io/SONA-Food-Delivery/
 
 
-Then, open the 'index.html' file on your browser to run the application.
+- Then, open the 'index.html' file on your browser to run the application.
 
-click on the 'go live' below the terminal to open your code in browser.
+- click on the 'go live' below the terminal to open your code in browser.
 
 # Deliverables
 
