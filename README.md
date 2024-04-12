@@ -59,13 +59,9 @@ This is where I will build an app for delivering food.
 
 - click on the 'go live' below the terminal to open your code in browser.
 
-- Test your server by visiting this route in the browser:
+  # Live link
 
- http://localhost:5000/restaurants 
- 
- # Live link
-
-Deployed Frontend can be accessed here https://sharonobinda.github.io/SONA-Food-Delivery/
+Deployed backend can be accessed here https://sharonobinda.github.io/SONA-Food-Delivery/
 
 # Deliverables
 
