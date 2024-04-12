@@ -27,46 +27,45 @@ This is where I will build an app for delivering food.
 
 **To use this repo on your machine follow the steps below**
 
-Open a terminal/command line interface on your computer
+- Open a terminal/command line interface on your computer
 
-Clone the repo by using the following:
+- Clone the repo by using the following:
 
-git clone:https://github.com/Sharonobinda/SONA-Food-Delivery.git
+- git clone:https://github.com/Sharonobinda/SONA-Food-Delivery.git
 
-Change directory to the repo folder;
+- Change directory to the repo folder;
 
-cd SONA-Food-Delivery
+- cd SONA-Food-Delivery
 
-To Open the repo in Visual Studio Code: code .
+- To Open the repo in Visual Studio Code: code .
 
 ****Use the following steps to run the application;**
 
-First, make sure that you have 'json-server' installed globally or locally in your project.
+- First, make sure that you have 'json-server' installed globally or locally in your project.
 
-In this project, you will install it globally by navigating to your project directory and run the following command on your vs code terminal;
+- In this project, you will install it globally by navigating to your project directory and run the following command on your vs code terminal;
 
- npm install -g json-server
+  npm install -g json-server
 
-Also, ensure that you have Node.js and npm installed and that they are up to date
+- Also, ensure that you have Node.js and npm installed and that they are up to date
 
 ****Then follow the instructions below for live server to work well with json-server​**
 
 - Run the following command to get server started:
 ​
-json-server --watch db.json 
-
-- Test your server by visiting this route in the browser:
-
- https://sona-food-delivery.onrender.com
- 
- # Live link
-
-Deployed Frontend can be accessed here https://sharonobinda.github.io/SONA-Food-Delivery/
-
+  json-server --watch db.json
 
 - Then, open the 'index.html' file on your browser to run the application.
 
 - click on the 'go live' below the terminal to open your code in browser.
+
+- Test your server by visiting this route in the browser:
+
+ http://localhost:5000/restaurants 
+ 
+ # Live link
+
+Deployed Frontend can be accessed here https://sharonobinda.github.io/SONA-Food-Delivery/
 
 # Deliverables
 
