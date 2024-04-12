@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Form</title>
+    <link rel="stylesheet" href="My Account.css">
+</head>
+<body>
+
+  <div class="parent">
+    <div class="div1">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Home</a></li>
+          <li><a class="menu__item" href="My Account.html">My Account</a></li>
+          <li><a class="menu__item" href="Help.html">Help</a></li>
+          <li><a class="menu__item" href="terms$conditions.html">terms$conditions</a></li>
+        </ul>
+      </div>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+                <button type="button" class="btn btn-secondary edit-btn">Edit</button>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" class="form-control" required>
+                <button type="button" class="btn btn-secondary edit-btn">Edit</button>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" id="email" class="form-control" required>
+                <button type="button" class="btn btn-secondary edit-btn">Edit</button>
+            </div>
+            <div class="form-group">
+                <label for="location" class="form-label">Delivery Location:</label>
+                <input type="text" id="location" class="form-control" required>
+                <button type="button" class="btn btn-secondary edit-btn">Edit</button>
+                <button type="button" class="btn btn-secondary">Delete</button>
+            </div>
+            <div class="form-group">
+                <label for="language" class="form-label">Current Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <button type="button" class="btn btn-secondary edit-btn">Change</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

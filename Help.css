@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* styling of nav menu */
+.parent {
+    height: 100vh;
+    width: 100%;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+ 
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .menu__btn > span,.menu__btn > span::before,.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f15a29;
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+ 
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 20vw;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    /* changing background color of the menu */
+    background-color: rgba(41, 41, 95, 0.347);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+  }
+ 
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: rgba(41, 41, 95, 0.347);
+  }
+  /* end of nav bar */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to viewport height for vertical centering */
+}
+
+.content {
+    margin-bottom: 20px; /* Adjust spacing between content */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: red;
+}
