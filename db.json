@@ -1,0 +1,99 @@
+{
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Pizza Palace",
+        "cuisine": "Italian",
+        "logo": "pizza logo.jpeg",
+        "menu": [
+          {
+            "id": 101,
+            "name": "Margherita Pizza",
+            "price": 10.99,
+            "image": "Margherita pizza.jpg"
+          },
+          {
+            "id": 102,
+            "name": "Pepperoni Pizza",
+            "price": 12.99,
+            "image": "Papperoni pizza.jpg"
+          },
+          {
+            "id": 103,
+            "name": "Vegetarian Pizza",
+            "price": 11.99,
+            "image": "Vegetarian pizza.jpg"
+          },
+          {
+            "id": 104,
+            "name": "Barbeque Pizza",
+            "price": 15.89,
+            "image": "Barbeque pizza.jpg"
+          }
+
+        ],
+        "rating": 4.5,
+        "reviews": [
+          {
+            "id": 1,
+            "user": "John Doe",
+            "comment": "Great pizza, loved it!",
+            "rating": 5
+          },
+          {
+            "id": 2,
+            "user": "Jane Smith",
+            "comment": "Good service, tasty food.",
+            "rating": 4
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Burger Barn",
+        "cuisine": "American",
+        "logo": "burger logo.jpeg",
+        "menu": [
+          {
+            "id": 201,
+            "name": "Classic Cheeseburger",
+            "price": 8.99,
+            "image": "classic cheese burger.jpg"
+          },
+          {
+            "id": 202,
+            "name": "Bacon Burger",
+            "price": 10.99,
+            "image": "bacon burger.jpg"
+          },
+          {
+            "id": 203,
+            "name": "Veggie Burger",
+            "price": 9.99,
+            "image": "veggie burger.jpg"
+          },
+          {
+            "id": 204,
+            "name": "Large Burger",
+            "price": 20.86,
+            "image": "large burger.jpg" 
+          }
+        ],
+        "rating": 4.2,
+        "reviews": [
+          {
+            "id": 1,
+            "user": "Alice Johnson",
+            "comment": "Best burgers in town!",
+            "rating": 5
+          },
+          {
+            "id": 2,
+            "user": "Bob Williams",
+            "comment": "Decent food, fast delivery.",
+            "rating": 4
+          }
+        ]
+      }
+    ]
+  }
