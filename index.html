@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>SONA Food Delivery</title> 
-  <link rel="stylesheet" href="./style.css"> 
-  <style>
-    .pizza-card {
-        /* margin-right: 20px; */ /* Remove this line */
-        flex: 1 0 25%; /* Adjust as needed */
-      max-width: 25%; /* Adjust as needed */
-      padding: 0 15px; /* Adjust as needed */
-      box-sizing: border-box; /* Adjust as needed */
-    }
-  </style>
-</head> 
-<body> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONA Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
   <div class="parent">
     <div class="top-navbar">
       <div class="hamburger-menu">
@@ -30,155 +23,21 @@
           <li><a class="menu__item" href="terms$conditions.html">terms$conditions</a></li>
         </ul>
       </div>
-      <div class="h1">        
-        <h1>Welcome to SONA food delivery</h1>
-        <h2>Fast Delivery</h2>
-        <p> Like a flash! Order or send anything in your city and receive it in minutes</p>
-        <h1>ORDER FROM</h1>
-      </div>
-      <div class="btn-container">
-        <div class="btn-group mt-3" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-circle" id="pizza-btn">Pizza</button>
-          <button type="button" class="btn btn-circle" id="burger-btn">Burger</button>
+            <div class="h1">
+                <h1>Welcome to SONA food delivery</h1>
+                <h2>Fast Delivery</h2>
+                <p>Like a flash! Order or send anything in your city and receive it in minutes</p>
+                <h1>ORDER FROM</h1>
+            </div>
+            <div class="btn-container">
+                <div class="btn-group mt-3" role="group" aria-label="Basic example">
+                    <a href="Pizza.html" class="btn btn-circle" id="pizza-btn">Pizza</a>
+                    <a href="Burger.html" class="btn btn-circle" id="burger-btn">Burger</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Restaurant Information --> 
-      <div class="col-md-6"> 
-        <div class="card mb-3"> 
-            <img src="./images/pizza logo.jpeg" class="card-img-top" alt="pizza logo.jpeg" height="80" width="80"> 
-            <div class="card-body"> 
-                <h5 class="card-title">Pizza Palace</h5> 
-                <p class="card-text">Cuisine: Italian</p> 
-                <p class="card-text">Rating: 4.2</p> 
-                <h6 class="card-subtitle mb-2 text-muted">Menu:</h6> 
-                <ul class="list-group"> 
-                    <!-- Placeholder for menu items --> 
-                    <!-- This area will be populated dynamically using JavaScript --> 
-                    <div class="container mt-5"> 
-                        <div class="row" id="pizzaList">  
-                            <!-- Pizza Card 1 -->
-                            <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                                <img src="./images/Margherita Pizza.jpg" class="card-img-top" alt="Margherita Pizza" height="250" width="250"> 
-                                <div class="card-body"> 
-                                    <h5 class="card-title">Margherita Pizza</h5> 
-                                    <p class="card-text">Price: $8.99</p> 
-                                </div> 
-                            </div> 
-                            <!-- Pizza Card 2 -->
-                            <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                                <img src="./images/Papperoni pizza.jpg" class="card-img-top" alt="Papperoni Pizza" height="250" width="250"> 
-                                <div class="card-body"> 
-                                    <h5 class="card-title">Pepperoni Pizza</h5> 
-                                    <p class="card-text">Price: $10.99</p> 
-                                </div> 
-                            </div>
-                            <!-- Pizza Card 3 -->
-                            <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                                <img src="./images/Vegetarian pizza.jpg" class="card-img-top" alt="Vegetarian Pizza" height="250" width="250"> 
-                                <div class="card-body"> 
-                                    <h5 class="card-title">Vegetarian Pizza</h5> 
-                                    <p class="card-text">Price: $9.99</p> 
-                                </div> 
-                            </div> 
-                            <!-- Pizza Card 4 -->
-                            <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                                <img src="./images/Barbeque pizza.jpg" class="card-img-top" alt="Barbeque Pizza" height="250" width="250"> 
-                                <div class="card-body"> 
-                                    <h5 class="card-title">Barbeque Pizza</h5> 
-                                    <p class="card-text">Price: $20.86</p> 
-                                </div> 
-                            </div> 
-                        </div> 
-                    </div>
-                    <h6 class="card-subtitle mb-2 mt-3 text-muted">Comments:</h6> 
-                    <ul class="list-group"> 
-                        <!-- Placeholder for comments -->  
-                        <!-- This area will be populated dynamically using JavaScript --> 
-                        <li class="list-group-item">John Doe: Great pizza, loved it!</li> 
-                        <li class="list-group-item">Jane Smith: Good service, tasty food.</li> 
-                    </ul> 
-                    <form class="mb-2">  
-                        <input type="text" name="user" placeholder="Your Name" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2"> 
-                        <textarea name="comment" placeholder="Your Review" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2"></textarea> 
-                        <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2"> 
-                        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit Review</button> 
-                    </form> 
-                </ul>
-            </div> 
-        </div> 
     </div>
-    
-                
-    <div class="col-md-6"> 
-              <div class="card mb-3"> 
-                <img src="./images/burger logo.jpeg" class="card-img-top" alt="burger logo.jpeg" height="80" width="80"> 
-                <div class="card-body"> 
-                  <h5 class="card-title">Burger Barn</h5> 
-                  <p class="card-text">Cuisine: American</p> 
-                  <p class="card-text">Rating: 4.2</p> 
-                  <h6 class="card-subtitle mb-2 text-muted">Menu:</h6> 
-                  <ul class="list-group"> 
-                    <!-- Placeholder for menu items --> 
-                    <!-- This area will be populated dynamically using JavaScript --> 
-                    <div class="container mt-5"> 
-                      <div class="row" id="burgerList"> 
-                          <!-- Burger Card 1 -->
-                          <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                              <img src="./images/classic cheese burger.jpg" class="card-img-top" alt="Classic Cheeseburger" height="250" width="250"> 
-                              <div class="card-body"> 
-                                  <h5 class="card-title">Classic Cheeseburger</h5> 
-                                  <p class="card-text">Price: $8.99</p> 
-                              </div> 
-                          </div> 
-                          <!-- Burger Card 2 -->
-                          <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                              <img src="./images/bacon burger.jpg" class="card-img-top" alt="Bacon Burger" height="250" width="250"> 
-                              <div class="card-body"> 
-                                  <h5 class="card-title">Bacon Burger</h5> 
-                                  <p class="card-text">Price: $10.99</p> 
-                              </div> 
-                          </div>
-                          <!-- Burger Card 3 -->
-                          <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                              <img src="./images/veggie burger.jpg" class="card-img-top" alt="Veggie Burger" height="250" width="250"> 
-                              <div class="card-body"> 
-                                  <h5 class="card-title">Veggie Burger</h5> 
-                                  <p class="card-text">Price: $9.99</p> 
-                              </div> 
-                          </div> 
-                          <!-- Burger Card 4 -->
-                          <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;"> 
-                              <img src="./images/large burger.jpg" class="card-img-top" alt="Large Burger" height="250" width="250"> 
-                              <div class="card-body"> 
-                                  <h5 class="card-title">Large Burger</h5> 
-                                  <p class="card-text">Price: $20.86</p> 
-                              </div> 
-                          </div> 
-                      </div> 
-                  </div>
-                  <h6 class="card-subtitle mb-2 mt-3 text-muted">Comments:</h6> 
-                  <ul class="list-group"> 
-                    <!-- Placeholder for comments --> 
-                    <!-- This area will be populated dynamically using JavaScript --> 
-                    <li class="list-group-item">Alice Johnson: Best burgers in town!</li> 
-                    <li class="list-group-item">Bob Williams: Decent food, fast delivery.</li> 
-                  </ul> 
-                  <form class="mb-2"> 
-                    <input type="text" name="user" placeholder="Your Name" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2"> 
-                    <textarea name="comment" placeholder="Your Review" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2">
+    <script src="index.js"></script>
+</body>
 
-                    </textarea> 
-                    <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2"> 
-                    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit Review</button> 
-                  </form> 
-                </div> 
-              </div> 
-            </div> 
-          </div> 
-        </div> 
-        
-          <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">ADD TO CART</button>
-                                                                                                                       
-      </body>
-      <script src="index.js"></script> 
-      </html>
+</html>
