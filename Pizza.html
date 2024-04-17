@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./pizza.css">
+</head>
+<body>
+    <style>
+        .pizza-card {
+        /* margin-right: 20px; */ /* Remove this line */
+        flex: 1 0 25%; /* Adjust as needed */
+      max-width: 25%; /* Adjust as needed */
+      padding: 0 15px; /* Adjust as needed */
+      box-sizing: border-box; /* Adjust as needed */
+    }
+    </style>
+  <div class="container mt-5">
+    <div class="row" id="pizzaList">
+      <!-- Pizza Card 1 -->
+      <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;">
+       <img src="./images/Margherita Pizza.jpg" class="card-img-top" alt="Margherita Pizza" height="250" width="250">
+        <div class="card-body">
+          <h5 class="card-title">Margherita Pizza</h5>
+          <p class="card-text">Price: $8.99</p>
+        </div>
+      </div>
+      <!-- Pizza Card 2 -->
+      <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;">
+        <img src="./images/Papperoni pizza.jpg" class="card-img-top" alt="Papperoni Pizza" height="250" width="250">
+        <div class="card-body">
+          <h5 class="card-title">Pepperoni Pizza</h5>
+          <p class="card-text">Price: $10.99</p>
+        </div>
+      </div>
+      <!-- Pizza Card 3 -->
+      <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;">
+        <img src="./images/Vegetarian pizza.jpg" class="card-img-top" alt="Vegetarian Pizza" height="250" width="250">
+        <div class="card-body">
+          <h5 class="card-title">Vegetarian Pizza</h5>
+          <p class="card-text">Price: $9.99</p>
+        </div>
+      </div>
+      <!-- Pizza Card 4 -->
+      <div class="card mb-3 col-md-3 pizza-card" style="display:inline-block;">
+        <img src="./images/Barbeque pizza.jpg" class="card-img-top" alt="Barbeque Pizza" height="250" width="250">
+        <div class="card-body">
+          <h5 class="card-title">Barbeque Pizza</h5>
+          <p class="card-text">Price: $20.86</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="card-subtitle mb-2 mt-3 text-muted">Comments:</h6>
+  <ul class="list-group">
+    <!-- Placeholder for comments -->
+    <!-- This area will be populated dynamically using JavaScript -->
+    <li class="list-group-item">John Doe: Great pizza, loved it!</li>
+    <li class="list-group-item">Jane Smith: Good service, tasty food.</li>
+  </ul>
+  <form class="mb-2">
+    <input type="text" name="user" placeholder="Your Name" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2">
+    <textarea name="comment" placeholder="Your Review" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2"></textarea>
+    <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5" class="block w-full border border-gray-300 rounded px-4 py-2 mb-2">
+    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit Review</button>
+  </form>
+</ul>
+<div>
+    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">ADD TO CART</button>
+  <h6 class="card-subtitle mb-2 mt-3 text-muted">
+    <a href="index.html" style="color: black;">&lt;&lt; Back to Home</a>
+  </h6>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
